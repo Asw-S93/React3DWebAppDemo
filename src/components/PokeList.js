@@ -18,7 +18,7 @@ const PokeList = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://pokeapi.co/api/v2/pokemon?limit=20"
+          "https://pokeapi.co/api/v2/pokemon?limit=10"
         );
         setPokemonList(response.data.results);
       } catch (error) {
